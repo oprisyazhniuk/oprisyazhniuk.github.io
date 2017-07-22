@@ -1,0 +1,478 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-fixed-top
+{
+  background-color: #ffffff;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 8px 0;
+
+  .navbar-brand
+  {
+    color: #B50D32;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+}
+.navbar-nav
+{
+
+  float: right;
+
+    li
+    {
+
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      font-size: 14px;
+
+
+      &:hover
+      {
+        color:  #B50D32;
+      }
+
+      a
+      {
+        text-decoration: none;
+
+      }
+    }
+
+}
+
+.header
+{
+  display: block;
+  background-image: url("../img/bg-main.bmp");
+  height: 534px;
+  margin-top: 50px;
+  padding-top: 180px;
+  text-align: center;
+
+  h1
+  {
+
+      text-transform: uppercase;
+      font-size: 70px;
+      font-weight: bold;
+      padding-bottom: 60px;
+      color: #FFFFFF;
+
+  }
+
+  .btn {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background: transparent;
+    font-size: 20px;
+    transition: 0.3s all ease-in-out;
+
+
+    &:hover {
+      color: #DC0030;
+      background: #FFFFFF;
+      border: 1px solid #DC0030;
+    }
+  }
+}
+//***************************************SERVICES*********************************************
+
+.name-services
+{
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 80px 0 60px 0;
+  text-align: center;
+  color: #000;
+}
+.services
+{
+  margin: 80px 0;
+  color: #8C8C8C;
+  i {
+
+
+  }
+    .fa
+    {
+      border-radius: 50%;
+      padding: 30px;
+      background: #ccc;
+      color: #fff;
+      font-family: fontawesome !important;
+    }
+
+  span
+  {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #DC0030;
+    display: inline-block;
+    margin: 30px 0;
+    font-size: 20px;
+  }
+  p
+  {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 300;
+  };
+}
+
+//***************************************SKILLS*********************************************
+
+.name-skills
+{
+
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+.skills
+{
+
+  background: url("../img/bg-skills.png");
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .sl {
+    background: rgba(255,255,255,1);
+    border-radius: 50%;
+    border: 8px solid #77289b;
+    margin: 0 15px 30px 15px;
+
+    img {
+      padding: 45px;
+
+
+    }
+  }
+
+}
+
+//***************************************WORKS*********************************************
+.name-works
+{
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 80px 0 60px 0;
+  text-align: center;
+  color: #000;
+}
+.grid
+{
+  height: 1000px;
+  margin-bottom: 80px;
+  margin-left: 5%;
+  overflow: hidden;
+
+  .grid-item {
+    width: 160px;
+    height: 120px;
+    text-align: center;
+    border:none;
+    border-radius: 0;
+    position: relative;
+    //padding: 10px;
+
+    .cover-item-gallery
+    {
+      width: 100%;
+      height:100%;
+      background: rgba(185, 0, 41, 0.8);
+      display: none;
+      text-decoration: none;
+
+      img
+      {
+        display: none;
+      }
+      .fa
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+    }
+    &:hover .cover-item-gallery
+    {
+      display: block;
+
+    }
+
+  }
+
+    //*******************************MOCKUPS*********************************************************
+    .mock-1
+    {
+    background: url("../img/mockups/2.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-2
+  {
+    background: url("../img/mockups/9.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-3
+  {
+    background: url("../img/mockups/4.jpg");
+
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-4
+  {
+    background: url("../img/mockups/1.jpg");
+
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-5
+  {
+    background: url("../img/mockups/5.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-6
+  {
+    background: url("../img/mockups/7.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-7
+  {
+    background: url("../img/mockups/8.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-8
+  {
+    background: url("../img/mockups/10.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-9
+  {
+    background: url("../img/mockups/6.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-10
+  {
+    background: url("../img/mockups/10.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-11
+  {
+    background: url("../img/mockups/3.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+  .mock-12
+  {
+    background: url("../img/mockups/10.jpg");
+    margin: 0 0 20px 0;
+    height: 100%;
+    background-size: cover;
+  }
+
+    .grid-item--width2 { width: 340px;}
+    .grid-item--height2 { height: 200px; }
+    .grid-item--height3 { height: 260px; }
+    .grid-item--height4 { height: 360px; }
+    .grid-item--height5 { height: 460px; }
+
+}
+//**********************************************CONTACT*********************************************************
+
+
+.contact
+{
+  height: 400px;
+  color: #FFFFFF;
+  padding: 80px 0;
+  background: url("../img/bg-contact.png");
+  overflow-x: hidden;
+
+  .name-contact
+  {
+
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    color: #ffffff;
+  }
+ .fa
+ {
+   margin-bottom: 40px;
+ }
+}
+//***********************************FOOTER*****************************************
+
+footer
+{
+    background: #4C4C4C;
+    height: 55px;
+    box-sizing: border-box;
+.con
+
+{
+  margin-bottom: 0;
+}
+    .social
+    {
+      line-height: 55px;
+      a
+      {
+        text-decoration: none;
+        color: #FFFFFF;
+        margin:  0 25px;
+
+        &:hover
+        {
+          color: #F3933F;
+        }
+
+        i .fa
+        {
+          color: #FFFFFF;
+        }
+      }
+    }
+    .copyright
+    {
+      line-height: 50px;
+
+      span
+      {
+        color: #FFFFFF;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+
+//****************************************MEDIA QUERIES***********************************************************
+@media screen and (max-width: 767px)
+{
+
+  .navbar-nav
+  {
+
+    float: left;
+  }
+  .services
+  {
+    margin: 30px 0;
+
+    .container
+    {
+
+      p
+      {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .skills,.contact
+  {
+    overflow-y: hidden;
+  }
+  .contact
+  {
+    height: 600px;
+    .name-contact
+    {
+      font-size: 50px;
+      padding-bottom: 30px;
+    }
+    .fa{
+      margin: 35px 0 15px 0;
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+
+{
+  .navbar-nav
+  {
+    float: left;
+  }
+  .services
+  {
+    margin: 40px 0;
+
+    .container
+    {
+      padding: 0;
+
+      p
+        {
+          margin-bottom: 30px;
+        }
+    }
+  }
+
+  .grid
+  {
+    height: 1000px;
+  }
+  .skills,.contact
+  {
+    overflow-x: hidden;
+  }
+  .contact
+  {
+
+    .name-contact
+    {
+      font-size: 40px;
+    }
+  }
+
+
+}
+

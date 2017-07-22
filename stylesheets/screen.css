@@ -1,0 +1,497 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+/* line 5, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 19, ../sass/screen.scss */
+.navbar-fixed-top {
+  background-color: #ffffff;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 8px 0;
+}
+/* line 25, ../sass/screen.scss */
+.navbar-fixed-top .navbar-brand {
+  color: #B50D32;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* line 33, ../sass/screen.scss */
+.navbar-nav {
+  float: right;
+}
+/* line 38, ../sass/screen.scss */
+.navbar-nav li {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* line 48, ../sass/screen.scss */
+.navbar-nav li:hover {
+  color: #B50D32;
+}
+/* line 53, ../sass/screen.scss */
+.navbar-nav li a {
+  text-decoration: none;
+}
+
+/* line 62, ../sass/screen.scss */
+.header {
+  display: block;
+  background-image: url("../img/bg-main.bmp");
+  height: 534px;
+  margin-top: 50px;
+  padding-top: 180px;
+  text-align: center;
+}
+/* line 71, ../sass/screen.scss */
+.header h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: bold;
+  padding-bottom: 60px;
+  color: #FFFFFF;
+}
+/* line 82, ../sass/screen.scss */
+.header .btn {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+  font-size: 20px;
+  transition: 0.3s all ease-in-out;
+}
+/* line 90, ../sass/screen.scss */
+.header .btn:hover {
+  color: #DC0030;
+  background: #FFFFFF;
+  border: 1px solid #DC0030;
+}
+
+/* line 99, ../sass/screen.scss */
+.name-services {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 80px 0 60px 0;
+  text-align: center;
+  color: #000;
+}
+
+/* line 108, ../sass/screen.scss */
+.services {
+  margin: 80px 0;
+  color: #8C8C8C;
+}
+/* line 116, ../sass/screen.scss */
+.services .fa {
+  border-radius: 50%;
+  padding: 30px;
+  background: #ccc;
+  color: #fff;
+  font-family: fontawesome !important;
+}
+/* line 125, ../sass/screen.scss */
+.services span {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #DC0030;
+  display: inline-block;
+  margin: 30px 0;
+  font-size: 20px;
+}
+/* line 134, ../sass/screen.scss */
+.services p {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+/* line 144, ../sass/screen.scss */
+.name-skills {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+
+/* line 153, ../sass/screen.scss */
+.skills {
+  background: url("../img/bg-skills.png");
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 160, ../sass/screen.scss */
+.skills .sl {
+  background: white;
+  border-radius: 50%;
+  border: 8px solid #77289b;
+  margin: 0 15px 30px 15px;
+}
+/* line 166, ../sass/screen.scss */
+.skills .sl img {
+  padding: 45px;
+}
+
+/* line 176, ../sass/screen.scss */
+.name-works {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 80px 0 60px 0;
+  text-align: center;
+  color: #000;
+}
+
+/* line 185, ../sass/screen.scss */
+.grid {
+  height: 1000px;
+  margin-bottom: 80px;
+  margin-left: 5%;
+  overflow: hidden;
+}
+/* line 192, ../sass/screen.scss */
+.grid .grid-item {
+  width: 160px;
+  height: 120px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+/* line 201, ../sass/screen.scss */
+.grid .grid-item .cover-item-gallery {
+  width: 100%;
+  height: 100%;
+  background: rgba(185, 0, 41, 0.8);
+  display: none;
+  text-decoration: none;
+}
+/* line 209, ../sass/screen.scss */
+.grid .grid-item .cover-item-gallery img {
+  display: none;
+}
+/* line 213, ../sass/screen.scss */
+.grid .grid-item .cover-item-gallery .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  color: white;
+}
+/* line 222, ../sass/screen.scss */
+.grid .grid-item:hover .cover-item-gallery {
+  display: block;
+}
+/* line 231, ../sass/screen.scss */
+.grid .mock-1 {
+  background: url("../img/mockups/2.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 238, ../sass/screen.scss */
+.grid .mock-2 {
+  background: url("../img/mockups/9.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 245, ../sass/screen.scss */
+.grid .mock-3 {
+  background: url("../img/mockups/4.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 253, ../sass/screen.scss */
+.grid .mock-4 {
+  background: url("../img/mockups/1.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 261, ../sass/screen.scss */
+.grid .mock-5 {
+  background: url("../img/mockups/5.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 268, ../sass/screen.scss */
+.grid .mock-6 {
+  background: url("../img/mockups/7.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 275, ../sass/screen.scss */
+.grid .mock-7 {
+  background: url("../img/mockups/8.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 282, ../sass/screen.scss */
+.grid .mock-8 {
+  background: url("../img/mockups/10.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 289, ../sass/screen.scss */
+.grid .mock-9 {
+  background: url("../img/mockups/6.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 296, ../sass/screen.scss */
+.grid .mock-10 {
+  background: url("../img/mockups/10.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 303, ../sass/screen.scss */
+.grid .mock-11 {
+  background: url("../img/mockups/3.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 310, ../sass/screen.scss */
+.grid .mock-12 {
+  background: url("../img/mockups/10.jpg");
+  margin: 0 0 20px 0;
+  height: 100%;
+  background-size: cover;
+}
+/* line 318, ../sass/screen.scss */
+.grid .grid-item--width2 {
+  width: 340px;
+}
+/* line 319, ../sass/screen.scss */
+.grid .grid-item--height2 {
+  height: 200px;
+}
+/* line 320, ../sass/screen.scss */
+.grid .grid-item--height3 {
+  height: 260px;
+}
+/* line 321, ../sass/screen.scss */
+.grid .grid-item--height4 {
+  height: 360px;
+}
+/* line 322, ../sass/screen.scss */
+.grid .grid-item--height5 {
+  height: 460px;
+}
+
+/* line 328, ../sass/screen.scss */
+.contact {
+  height: 400px;
+  color: #FFFFFF;
+  padding: 80px 0;
+  background: url("../img/bg-contact.png");
+  overflow-x: hidden;
+}
+/* line 336, ../sass/screen.scss */
+.contact .name-contact {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+/* line 345, ../sass/screen.scss */
+.contact .fa {
+  margin-bottom: 40px;
+}
+
+/* line 352, ../sass/screen.scss */
+footer {
+  background: #4C4C4C;
+  height: 55px;
+  box-sizing: border-box;
+}
+/* line 357, ../sass/screen.scss */
+footer .con {
+  margin-bottom: 0;
+}
+/* line 362, ../sass/screen.scss */
+footer .social {
+  line-height: 55px;
+}
+/* line 365, ../sass/screen.scss */
+footer .social a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0 25px;
+}
+/* line 371, ../sass/screen.scss */
+footer .social a:hover {
+  color: #F3933F;
+}
+/* line 376, ../sass/screen.scss */
+footer .social a i .fa {
+  color: #FFFFFF;
+}
+/* line 382, ../sass/screen.scss */
+footer .copyright {
+  line-height: 50px;
+}
+/* line 386, ../sass/screen.scss */
+footer .copyright span {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 400, ../sass/screen.scss */
+  .navbar-nav {
+    float: left;
+  }
+
+  /* line 405, ../sass/screen.scss */
+  .services {
+    margin: 30px 0;
+  }
+  /* line 412, ../sass/screen.scss */
+  .services .container p {
+    margin-bottom: 20px;
+  }
+
+  /* line 418, ../sass/screen.scss */
+  .skills, .contact {
+    overflow-y: hidden;
+  }
+
+  /* line 422, ../sass/screen.scss */
+  .contact {
+    height: 600px;
+  }
+  /* line 425, ../sass/screen.scss */
+  .contact .name-contact {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  /* line 430, ../sass/screen.scss */
+  .contact .fa {
+    margin: 35px 0 15px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 440, ../sass/screen.scss */
+  .navbar-nav {
+    float: left;
+  }
+
+  /* line 444, ../sass/screen.scss */
+  .services {
+    margin: 40px 0;
+  }
+  /* line 448, ../sass/screen.scss */
+  .services .container {
+    padding: 0;
+  }
+  /* line 452, ../sass/screen.scss */
+  .services .container p {
+    margin-bottom: 30px;
+  }
+
+  /* line 459, ../sass/screen.scss */
+  .grid {
+    height: 1000px;
+  }
+
+  /* line 463, ../sass/screen.scss */
+  .skills, .contact {
+    overflow-x: hidden;
+  }
+
+  /* line 470, ../sass/screen.scss */
+  .contact .name-contact {
+    font-size: 40px;
+  }
+}
